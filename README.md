@@ -1,16 +1,11 @@
-## Documentation of this repository
+## Repository documentation
 
-This project is a landing page about business conference. Project created during my Web Development studies.
-
-
-<img src="/img/image-1.png">
-
-Project was developed with HTML and CSS.
+This project is a landing page about business conference and was developed with HTML, CSS and JavaScript. Project created during my Web Development studies.
 
 
-<img src="/img/image-2.png">
+<img src="/img/readme-1.png">
 
-Project is responsive for different resolutions on tablet and mobile.
+This project is responsive. The Mobile First concept was used.
 
 
-<img src="/img/image-3.png">
+<img src="/img/readme-2.png">

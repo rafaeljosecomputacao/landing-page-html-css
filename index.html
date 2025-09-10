@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Pro</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="img/briefcase.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header id="event-subscription">
-      <div id="disclaimer">
-        <h2>Business Pro</h2>
-        <p class="about-event">
-          An event to increase your knowledge
-        </p>
-        <p>Date of the event:</p>
-        <p class="event-date">Saturday, November 26th, 2023, 7pm</p>
-      </div>
-      <div id="subscription-form">
-        <p>Fill out the form to receive event details</p>
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" placeholder="Enter your name" />
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Enter your e-mail" />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="text" placeholder="Enter your phone" />
-          </div>
-          <input type="submit" class="btn" value="Sign up" />
-        </form>
-      </div>
-    </header>
-    <section id="key-benefits">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Pro</title>
+  <!-- Shortcut icon -->
+  <link rel="shortcut icon" href="img/briefcase.png" type="image/x-icon">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Script -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Banner -->
+  <header class="event-subscription">
+    <div class="event-disclaimer">
+      <h1>Business Pro</h1>
+      <p class="event-about">An event to increase your knowledge</p>
+      <p>Date of the event:</p>
+      <p class="event-date">
+        <span id="weekday"></span>, <span id="month"></span> <span id="day"></span>, <span id="year"></span>, 7pm
+      </p>
+    </div>
+    <div class="subscription-form">
+      <p>Fill out the form to receive event details</p>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" placeholder="Enter your phone" />
+        </div>
+        <input type="submit" class="btn" value="Sign up" />
+      </form>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Section benefits -->
+    <section class="benefits">
       <h2>What will you learn:</h2>
-      <div class="benefits">
+      <div class="benefits-content">
         <div class="benefit">
           <div id="benefit-1" class="benefit-img"></div>
           <p class="benefit-title">Strategy</p>
@@ -60,27 +74,29 @@
         </div>
       </div>
     </section>
-    <section id="location">
-      <div id="address">
+    <!-- Section location -->
+    <section class="location">
+      <div class="address">
         <i class="bi bi-geo-alt-fill"></i>
-        <div id="address-details">
+        <div class="address-details">
           <p>630 Jones Avenue</p>
           <p>Downtown, Portland, United States</p>
           <p>Opening: 7pm</p>
         </div>
       </div>
-      <div id="about-location">
+      <div class="location-about">
         <h3>Location</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum
           ante sit amet mauris ultricies malesuada. Nunc faucibus mattis tortor, vel
           accumsan augue accumsan eu.
         </p>
-      </div> 
+      </div>
     </section>
-    <section id="details">
+    <!-- Section details -->
+    <section class="details">
       <div class="detail" id="detail-1">
-        <img src="img/detail-1.jpg" alt="">
+        <img src="img/detail-1.jpg" alt="People watching a lecture">
         <div class="detail-description">
           <h3>An event with the best speakers</h3>
         </div>
@@ -99,10 +115,10 @@
             accumsan augue accumsan eu.
           </p>
         </div>
-        <img src="img/detail-2.jpg" alt="">
+        <img src="img/detail-2.jpg" alt="People in a meeting">
       </div>
       <div class="detail" id="detail-3">
-        <img src="img/detail-3.jpg" alt="">
+        <img src="img/detail-3.jpg" alt="People in a meeting">
         <div class="detail-description">
           <h3>Goals</h3>
           <p>
@@ -118,15 +134,21 @@
         </div>
       </div>
     </section>
-    <section id="call">
+    <!-- Section call -->
+    <section class="call">
       <h3>Did you like it? Then sign up</h3>
       <button class="btn">Request registration</button>
     </section>
-    <footer id="footer">
-      <h3>&copy; 2023 Business Pro</h3>
-      <p>Training the best managers</p>
-      <p><span>E-mail:</span> contact@businesspro.com</p>
-      <p><span>Phone:</span> +1 408 999-9872</p>
-    </footer>
-  </body>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>&copy; <span id="currentYear"></span> Business Pro</h3>
+    <p>Training the best managers</p>
+    <p><span>Email:</span> contact@businesspro.com</p>
+    <p><span>Phone:</span> +1 408 999-9872</p>
+  </footer>
+
+</body>
+
 </html>
